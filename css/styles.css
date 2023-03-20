@@ -318,6 +318,13 @@ body {
   border-radius: 50%;
 
   background-color: var(--light-backgrounds-color);
+
+  cursor: pointer;
+}
+
+.mob-menu-close-btn:is(:hover, :focus) {
+  background: var(--pressed-state-color);
+  fill: var(--main-basic-color);
 }
 
 .icon-close {
@@ -385,10 +392,17 @@ body {
 
   background-color: var(--primary-brand-color);
   border-radius: 50%;
+
+  transition: background-color var(--transition-duration)
+    var(--transition-timing-function);
 }
 
 .mob-social-media-icon {
   fill: var(--light-backgrounds-color);
+}
+
+.mob-social-media-link:is(:hover, :focus) {
+  background-color: var(--pressed-state-color);
 }
 
 /* PAGE STUDIO*/
@@ -429,7 +443,7 @@ body {
   color: var(--main-basic-color);
 
   text-align: center;
-  max-width: 320px;
+  width: 320px;
   margin: 0 auto 72px;
 }
 
