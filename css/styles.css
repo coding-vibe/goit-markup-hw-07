@@ -241,6 +241,7 @@ body {
 
 .header > .container {
   display: flex;
+  padding: 24px;
 }
 
 /* Navigation */
@@ -261,6 +262,28 @@ body {
   letter-spacing: var(--logo-letter-spacing);
   line-height: var(--header-logo-line-height);
   text-transform: uppercase;
+}
+
+/* Sections */
+
+.header-menu,
+.header-contacts {
+  display: none;
+}
+
+.mob-menu-open-btn {
+  border: none;
+  background-color: transparent;
+}
+
+.menu-icon {
+  stroke: var(--title-text-color);
+}
+
+.header-logo {
+  display: block;
+  padding-top: 24px;
+  padding-bottom: 24px;
 }
 
 /* Mob Menu */
@@ -295,7 +318,7 @@ body {
   background-color: var(--light-backgrounds-color);
 }
 
-.icon-menu {
+.icon-close {
   fill: var(--title-text-color);
 }
 
@@ -362,22 +385,6 @@ body {
   fill: var(--light-backgrounds-color);
 }
 
-/* Sections */
-
-.header-menu,
-.header-contacts {
-  display: none;
-}
-
-.menu-open-btn {
-  border: none;
-  background-color: transparent;
-}
-
-.menu-icon {
-  stroke: var(--title-text-color);
-}
-
 /* PAGE STUDIO*/
 
 /* Hero */
@@ -386,8 +393,8 @@ body {
   max-width: 1440px;
   margin-left: auto;
   margin-right: auto;
-  padding-top: 188px;
-  padding-bottom: 188px;
+  padding-top: 112px;
+  padding-bottom: 112px;
 
   background-image: linear-gradient(
       var(--hero-bg-gradient),
@@ -417,7 +424,7 @@ body {
 
   text-align: center;
   max-width: 496px;
-  margin: 0 auto 48px;
+  margin: 0 auto 72px;
 }
 
 /* Our Features */

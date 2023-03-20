@@ -13,10 +13,14 @@
 
   /* Header */
 
+  .menu-icon {
+    display: none;
+  }
+
   .header-menu {
     display: flex;
     gap: var(--header-gap);
-    margin-left: 76px;
+    margin-left: 120px;
   }
 
   .header-menu .link,
@@ -56,8 +60,7 @@
   /* Contacts */
 
   .header-contacts {
-    display: flex;
-    gap: var(--header-gap);
+    display: block;
   }
 
   .header-contacts-mailto,
@@ -73,24 +76,18 @@
     color: var(--pressed-state-color);
   }
 
-  .header-logo,
   .header-menu .link,
-  .header-menu .active-link,
-  .header-contacts-mailto,
-  .header-contacts-tel {
+  .header-menu .active-link {
     display: block;
     padding-top: 24px;
     padding-bottom: 24px;
   }
 
-  /* Hero */
-  .hero {
-    max-width: 1440px;
-    margin-left: auto;
-    margin-right: auto;
-    padding-top: 188px;
-    padding-bottom: 188px;
+  /* PAGE STUDIO*/
 
+  /* Hero */
+
+  .hero {
     background-image: linear-gradient(
         var(--hero-bg-gradient),
         var(--hero-bg-gradient)
@@ -112,6 +109,16 @@
         ),
         url(../images/hero-tablet-2x.jpg);
     }
+  }
+
+  .hero > h1 {
+    font-weight: var(--bold-font);
+    font-size: var(--main-title-font-size);
+    line-height: var(--main-title-line-height);
+  }
+
+  .hero-title {
+    margin: 0 auto 36px;
   }
 
   /* Our Features */
@@ -226,12 +233,52 @@
     padding: var(--top-bottom-section-padding) 0;
   }
 
+  /* Header */
+
+  .header-menu {
+    margin-left: 76px;
+  }
+
+  .header-menu .link:is(:hover, :focus) {
+    color: var(--pressed-state-color);
+  }
+
+  .header-menu .active-link {
+    color: var(--pressed-state-color);
+  }
+
+  /* Contacts */
+
+  .header-contacts {
+    display: flex;
+    gap: var(--header-gap);
+  }
+
+  .header-contacts-mailto,
+  .header-contacts-tel {
+    color: var(--primary-text-color);
+
+    transition: color var(--transition-duration)
+      var(--transition-timing-function);
+  }
+
+  .header-contacts-mailto:is(:hover, :focus),
+  .header-contacts-tel:is(:hover, :focus) {
+    color: var(--pressed-state-color);
+  }
+
+  .header-contacts-mailto,
+  .header-contacts-tel {
+    display: block;
+    padding-top: 24px;
+    padding-bottom: 24px;
+  }
+
+  /* PAGE STUDIO*/
+
   /* Hero */
 
   .hero {
-    max-width: 1440px;
-    margin-left: auto;
-    margin-right: auto;
     padding-top: 188px;
     padding-bottom: 188px;
 
@@ -258,7 +305,12 @@
     }
   }
 
+  .hero-title {
+    margin: 0 auto 48px;
+  }
+
   /* Our Features */
+
   .features-container {
     display: flex;
   }
