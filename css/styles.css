@@ -271,6 +271,14 @@ body {
   display: none;
 }
 
+.header-logo {
+  display: block;
+  padding-top: 24px;
+  padding-bottom: 24px;
+}
+
+/* Header Button */
+
 .mob-menu-open-btn {
   border: none;
   background-color: transparent;
@@ -280,13 +288,8 @@ body {
   stroke: var(--title-text-color);
 }
 
-.header-logo {
-  display: block;
-  padding-top: 24px;
-  padding-bottom: 24px;
-}
+/* Mobile Menu */
 
-/* Mob Menu */
 .mob-menu {
   position: fixed;
   top: 0;

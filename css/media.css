@@ -11,11 +11,13 @@
     max-width: 766px;
   }
 
-  /* Header */
+  /* HEADER */
 
   .menu-icon {
     display: none;
   }
+
+  /* Navigation */
 
   .header-menu {
     display: flex;
@@ -334,10 +336,6 @@
     border-radius: 4px;
   }
 
-  .footer-add-container {
-    column-gap: 0;
-  }
-
   .features h3 {
     margin-bottom: var(--p-margin-top-bottom);
 
@@ -409,6 +407,10 @@
     max-width: 1158px;
     flex-wrap: nowrap;
     align-items: baseline;
+  }
+
+  .footer-add-container {
+    column-gap: 0;
   }
 
   .footer-social-media {

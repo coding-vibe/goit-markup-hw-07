@@ -18,14 +18,15 @@
     <link rel="stylesheet" href="./css/media.css" />
   </head>
   <body>
+    <!-- Header -->
     <header class="header">
       <div class="container">
         <!-- Navigation -->
         <nav class="header-nav">
           <!-- Logo -->
           <a href="./index.html" class="header-logo link">
-            <span class="web-logo-part">Web</span>Studio</a
-          >
+            <span class="web-logo-part">Web</span>Studio
+          </a>
           <!-- Sections -->
           <ul class="header-menu list">
             <li><a href="./index.html" class="link">Studio</a></li>
@@ -52,6 +53,76 @@
             </li>
           </ul>
         </address>
+        <!-- Header Button -->
+        <button class="mob-menu-open-btn" data-menu-open>
+          <svg class="menu-icon" width="32" height="22">
+            <use href="./images/icons.svg#icon-menu"></use>
+          </svg>
+        </button>
+      </div>
+      <!-- Mobile Menu -->
+      <div class="mob-menu is-hidden" data-menu>
+        <div>
+          <button class="mob-menu-close-btn" data-menu-close>
+            <svg class="icon-menu" width="8" height="8">
+              <use href="./images/icons.svg#icon-close"></use>
+            </svg>
+          </button>
+          <ul class="mob-menu-list list">
+            <li class="mob-menu-item">
+              <a href="#" class="mob-menu-link link"> Studio</a>
+            </li>
+            <li class="mob-menu-item">
+              <a href="#" class="mob-menu-link link"> Portfolio</a>
+            </li>
+            <li class="mob-menu-item">
+              <a href="#" class="mob-menu-link link">Contacts</a>
+            </li>
+          </ul>
+        </div>
+        <div>
+          <ul class="list">
+            <li>
+              <a href="tel:+11(000)111-11-11" class="mob-contacts-tel link"
+                >+11 (000) 111-11-11</a
+              >
+            </li>
+            <li>
+              <a
+                href="mailto:info@devstudio.com"
+                class="mob-contacts-mailto link"
+                >info@devstudio.com</a
+              >
+            </li>
+          </ul>
+          <ul class="mob-social-media-list list">
+            <li class="mob-social-media-item">
+              <a href="#" class="mob-social-media-link link">
+                <svg class="mob-social-media-icon" width="24" height="24">
+                  <use href="./images/icons.svg#icon-instagram"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="mob-social-media-item">
+              <a href="#" class="mob-social-media-link link"
+                ><svg class="mob-social-media-icon" width="24" height="24">
+                  <use href="./images/icons.svg#icon-twitter"></use></svg
+              ></a>
+            </li>
+            <li class="mob-social-media-item">
+              <a href="#" class="mob-social-media-link link"
+                ><svg class="mob-social-media-icon" width="24" height="24">
+                  <use href="./images/icons.svg#icon-fb"></use></svg
+              ></a>
+            </li>
+            <li class="mob-social-media-item">
+              <a href="#" class="mob-social-media-link link"
+                ><svg class="mob-social-media-icon" width="24" height="24">
+                  <use href="./images/icons.svg#icon-linkedin"></use></svg
+              ></a>
+            </li>
+          </ul>
+        </div>
       </div>
     </header>
     <main>
@@ -351,5 +422,6 @@
         </div>
       </div>
     </footer>
+    <script src="./js/mobile-menu.js"></script>
   </body>
 </html>
