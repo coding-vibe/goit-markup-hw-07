@@ -62,7 +62,16 @@
   /* Contacts */
 
   .header-contacts {
-    display: block;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    align-items: center;
+    row-gap: 12px;
+    padding: 16px 0;
+
+    font-size: var(--small-font-size);
+    line-height: var(--small-line-height);
+    letter-spacing: var(--small-btn-letter-spacing);
   }
 
   .header-contacts-mailto,
@@ -136,6 +145,7 @@
   .features h3 {
     text-align: left;
   }
+
   /* Our Flow */
 
   .flow {
@@ -241,39 +251,18 @@
     margin-left: 76px;
   }
 
-  .header-menu .link:is(:hover, :focus) {
-    color: var(--pressed-state-color);
-  }
-
-  .header-menu .active-link {
-    color: var(--pressed-state-color);
-  }
-
   /* Contacts */
 
   .header-contacts {
     display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 24px;
     gap: var(--header-gap);
-  }
 
-  .header-contacts-mailto,
-  .header-contacts-tel {
-    color: var(--primary-text-color);
-
-    transition: color var(--transition-duration)
-      var(--transition-timing-function);
-  }
-
-  .header-contacts-mailto:is(:hover, :focus),
-  .header-contacts-tel:is(:hover, :focus) {
-    color: var(--pressed-state-color);
-  }
-
-  .header-contacts-mailto,
-  .header-contacts-tel {
-    display: block;
-    padding-top: 24px;
-    padding-bottom: 24px;
+    font-family: var(--primary-font), var(--family-font);
+    line-height: var(--primary-line-height);
+    letter-spacing: var(--primary-letter-spacing);
   }
 
   /* PAGE STUDIO*/
