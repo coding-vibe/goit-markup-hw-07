@@ -442,9 +442,9 @@ body {
 .hero-title {
   color: var(--main-basic-color);
 
-  text-align: center;
+  margin: 0 auto;
+  margin-bottom: 72px;
   width: 320px;
-  margin: 0 auto 72px;
 }
 
 /* Our Features */
