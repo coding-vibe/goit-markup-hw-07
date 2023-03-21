@@ -1,7 +1,50 @@
+/* RESPONSIVE */
+
+@media screen and (min-width: 320px) {
+  .container {
+    max-width: 479px;
+  }
+
+  .mob-contacts-tel {
+    font-size: 25px;
+  }
+
+  .mob-social-media-list {
+    column-gap: 24px;
+  }
+
+  .modal {
+    width: 100%;
+    height: auto;
+  }
+
+  .form-order-label-checkbox {
+    font-size: 9px;
+  }
+}
+
 /* MOBILE */
+
 @media screen and (min-width: 480px) {
   .container {
     max-width: 425px;
+  }
+
+  .mob-contacts-tel {
+    font-size: 36px;
+  }
+
+  .mob-social-media-list {
+    column-gap: 56px;
+  }
+
+  .modal {
+    width: 392px;
+    height: 586px;
+  }
+
+  .form-order-label-checkbox {
+    font-size: var(--small-font-size);
   }
 }
 
@@ -129,7 +172,7 @@
   }
 
   .hero-title {
-    margin: 0 auto 36px;
+    margin-bottom: 36px;
     width: 496px;
   }
 
@@ -232,7 +275,6 @@
 
   .modal {
     width: 408px;
-    height: 586px;
   }
 }
 
@@ -261,6 +303,7 @@
     padding: 24px;
     gap: var(--header-gap);
 
+    font-size: 16px;
     font-family: var(--primary-font), var(--family-font);
     line-height: var(--primary-line-height);
     letter-spacing: var(--primary-letter-spacing);
@@ -298,7 +341,7 @@
   }
 
   .hero-title {
-    margin: 0 auto 48px;
+    margin-bottom: 36px;
   }
 
   /* Our Features */
@@ -336,6 +379,7 @@
 
   .features p {
     font-size: 16px;
+    font-weight: 400;
   }
 
   /* Our Flow */
@@ -420,7 +464,6 @@
   /* Modal */
 
   .modal {
-    width: 408px;
     height: 584px;
   }
 }
