@@ -5,6 +5,7 @@
     max-width: 479px;
   }
 
+  /* Mobile Menu */
   .mob-contacts-tel {
     font-size: 25px;
   }
@@ -13,6 +14,7 @@
     column-gap: 24px;
   }
 
+  /* Modal */
   .modal {
     width: 100%;
     height: auto;
@@ -30,6 +32,7 @@
     max-width: 425px;
   }
 
+  /* Mobile Menu */
   .mob-contacts-tel {
     font-size: 36px;
   }
@@ -38,6 +41,7 @@
     column-gap: 56px;
   }
 
+  /* Modal */
   .modal {
     width: 392px;
     height: 586px;
